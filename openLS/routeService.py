@@ -26,7 +26,7 @@ def extractPoint(point):
 
 def sendORSRoutingRequest(request):
     global URL_OPENLS_ROUTE_SERVICE
-    return sendRequestsToURL(request,URL_OPENLS_ROUTE_SERVICE)
+    return sendRequestToURL(request,URL_OPENLS_ROUTE_SERVICE)
 
 
     

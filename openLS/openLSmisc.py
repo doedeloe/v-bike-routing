@@ -27,6 +27,12 @@ def sendRequestsToURL(requests,url):
         answers.append(answer)
     return answers
 
+def sendRequestToURL(request,url):
+    postData = { "REQUEST" : request }
+    filehandle = urllib.urlopen(url,urllib.urlencode(postData))
+    answer = filehandle.read()
+    return answer
+
 def readAdressesFromInputFiles():
     adresses = []
     for line in fileinput.input():
